@@ -93,3 +93,6 @@
    91  cd 
    92  git clone https://github.com/ankushgupta/devopsbatch.git
    93  history > devopsbatch/commands
+
+
+https://nvie.com/posts/a-successful-git-branching-model/
