@@ -1,0 +1,163 @@
+master
+
+root@instance-8:/etc/puppetlabs/code/environments/production/modules/httpd/manifests# history
+    1  date
+    2  wget https://apt.puppetlabs.com/puppet6-release-bionic.deb
+    3  dpkg -i puppet6-release-bionic.deb
+    4  apt-update
+    5  apt-get udpate
+    6  apt update
+    7  apt install -y puppetserver
+    8  cd /etc/puppetlabs/puppet/
+    9  vim puppet.conf
+   10  cat /etc/hosts
+   11  hostname
+   12  ifconfig
+   13  nslookup 10.128.0.10
+   14  nslookup 10.128.0.9
+   15  vim puppet.conf
+   16  systemctl start puppetserver
+   17  ps -ef | grep -i puppetserver
+   18  cd /var/log
+   19  ls -l
+   20  cd apt
+   21  ls -l
+   22  cd -
+   23  cd
+   24  cd /etc/puppetlabs/puppet
+   25  cat puppet.conf
+   26  nslookup 10.128.0.10
+   27  /opt/puppetlabs/bin/puppetserver ca list
+   28  cd ..
+   29  ls -l
+   30  cd code/
+   31  ls -l
+   32  cd environments/
+   33  ls -l
+   34  cd production/
+   35  ls -l
+   36  cd  manifests/
+   37  ls -l
+   38  vim site.pp
+   39  pwd
+   40  cd ..
+   41  ls -l
+   42  cd modules/
+   43  ls -l
+   44  mkdir apache
+   45  cd apache/
+   46  ls -l
+   47  cd ..
+   48  puppet module generate httpd
+   49  /opt/puppetlabs/bin/puppet module generate httpd
+   50  ls -l
+   51  puppet help module generate
+   52  /opt/puppetlabs/bin/puppet help module generate
+   53  wget https://apt.puppet.com/puppet-tools-release-bionic.deb
+   54  sudo dpkg -i puppet-tools-release-bionic.deb
+   55  sudo apt-get update
+   56  sudo apt-get install pdk
+   57  pdk new module httpd
+   58  ls -l
+   59  cd httpd/
+   60  ls -l
+   61  cd manifests/
+   62  ls -l
+   63  vim init.pp
+   64  /opt/puppetlabs/bin/puppet parser validate init.pp
+   65  cd ../../../manifests/
+   66  vim site.pp
+   67  cd ../modules/httpd/manifests/
+   68  vim init.pp
+   69  /opt/puppetlabs/bin/puppet resource --types
+   70  puppet describe package
+   71  /opt/puppetlabs/bin/puppet describe package
+   72  vim init.pp
+   73  cd ..
+   74  cd templates/
+   75  ls -l
+   76  vim index.html.erb
+   77  cd ../manifests/
+   78  vi init.pp
+   79  cd ../templates/
+   80  ls -l
+   81  vim index.html.erb
+   82  cd ../../../manifests/
+   83  vim site.pp
+   84  cd ../modules/
+   85  ls -l
+   86  cd  httpd/
+   87  ls -l
+   88  mkdir files
+   89  cd files
+   90  ls -l
+   91  vim test
+   92  cd ../manifests/
+   93  vim init.pp
+   94  vim ../../../manifests/site.pp
+   95  vim init.pp
+   96  history
+root@instance-8:/etc/puppetlabs/code/environments/production/m
+
+
+
+
+client 
+root@instance-9:/var/www/html# history
+    1  date
+    2  wget https://apt.puppetlabs.com/puppet6-release-bionic.deb
+    3  dpkg -i puppet6-release-bionic.deb
+    4  apt update
+    5  cat /etc/hosts
+    6  ifconfig
+    7  apt install puppet-agent -y
+    8  cd /etc/puppetlabs/puppet/
+    9  vim puppet.conf
+   10  /opt/puppetlabs/bin/puppet resource service puppet ensure=running enable=true
+   11  /opt/puppetlabs/bin/puppet agnet -t
+   12  /opt/puppetlabs/bin/puppet agent -t
+   13  /opt/puppetlabs/bin/facter
+   14  /opt/puppetlabs/bin/puppet agent -t
+   15  cat puppet.conf
+   16  /opt/puppetlabs/bin/puppet agent -t
+   17  ls -l /tmp
+   18  /opt/puppetlabs/bin/puppet agent -t
+   19  rm -rf /tmp/demo/
+   20  /opt/puppetlabs/bin/puppet agent -t
+   21  ps -ef |grep -i apache
+   22  /opt/puppetlabs/bin/puppet agent -t
+   23  ps -ef |grep -i apache
+   24  /opt/puppetlabs/bin/puppet agent -t
+   25  cd /etc/nginx/
+   26  ls -l
+   27  cd conf.d/
+   28  ls -l
+   29  cd ..
+   30  vim nginx.conf
+   31  netstat -tunlp
+   32  cd sites-enabled
+   33  ls -l
+   34  cat default
+   35  cd /var/www/example.com
+   36  cd /var/www/html
+   37  ls -l
+   38  cat index.html
+   39  rm -rf index.html
+   40  /opt/puppetlabs/bin/puppet agent -t
+   41  cat index.
+   42  cat index.html
+   43  /opt/puppetlabs/bin/puppet agent -t
+   44  vim index.html
+   45  /opt/puppetlabs/bin/puppet agent -t
+   46  cat index.html
+   47  cat index.
+   48  ls -l
+   49  /opt/puppetlabs/bin/puppet agent -t
+   50  cat /tmp/test
+   51  history
+
+
+https://forge.puppet.com/
+https://puppet.com/docs/puppet/latest/type.html
+
+
